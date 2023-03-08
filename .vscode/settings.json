@@ -1,0 +1,14 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stp_lexer.h": "c",
+        "cctype": "cpp",
+        "vector": "cpp",
+        "executionengine.h": "c",
+        "target.h": "c",
+        "externc.h": "c",
+        "core.h": "c",
+        "errorhandling.h": "c",
+        "spl_lexer.h": "c"
+    }
+}
