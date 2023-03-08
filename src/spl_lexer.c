@@ -144,17 +144,7 @@ static spl_token_type identifierType()
     case 't':
         return check_keyword(1, 3, "rue", TK_TRUE);
     case 'f':
-        if (lexer.current - lexer.start > 1)
-        {
-            switch (lexer.start[1])
-            {
-                case 'a':
-                    return check_keyword(2, 3, "lse", TK_FALSE);
-                case 'o':
-                    return check_keyword(2, 1, "r", TK_FOR);
-            }
-        }
-        break;
+        return check_keyword(2, 4, "alse", TK_FALSE);
     case 'p':
         return check_keyword(1, 4, "rint", TK_PRINT);
     case 'v':

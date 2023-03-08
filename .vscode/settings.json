@@ -9,6 +9,11 @@
         "externc.h": "c",
         "core.h": "c",
         "errorhandling.h": "c",
-        "spl_lexer.h": "c"
+        "spl_lexer.h": "c",
+        "spl_compiler.h": "c",
+        "spl_memory.h": "c",
+        "spl_object.h": "c",
+        "memory.h": "c",
+        "spl_vm.h": "c"
     }
 }

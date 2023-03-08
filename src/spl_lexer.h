@@ -1,10 +1,7 @@
 #ifndef SPL_LEXER_H
 #define SPL_LEXER_H
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdbool.h>
+#include "spl_common.h"
 
 
 typedef enum {
