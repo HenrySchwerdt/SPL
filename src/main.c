@@ -3,15 +3,18 @@
 #include <string.h>
 #include "spl_common.h"
 #include "spl_vm.h"
-
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+#define MAG "\e[0;35m"
+#define CYN "\e[0;36m"
 
 static void repl() {
     char line[1024];
     for (;;) {
-        printf("> ");
+        printf("%s> %s", CYN, ANSI_COLOR_RESET);
 
         if(!fgets(line, sizeof(line), stdin)) {
-            printf("Bla");
+            printf("Exit Repl");
             printf("\n");
             break;
         }
