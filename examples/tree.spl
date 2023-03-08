@@ -1,0 +1,29 @@
+var STAR = "*";
+var SPACE = " ";
+var LINES = 10;
+
+
+var outer = 0;
+var starCount = 1;
+
+
+//   *
+//  ***
+// ***** 
+//*******
+while(outer < LINES) {
+    var inner = 0;
+    var line = " ";
+    while(inner < LINES - outer - 1) {
+        line = line + SPACE;
+        inner = inner + 1;
+    }
+    inner = 0;
+    while(inner < starCount) {
+        line = line + STAR;
+        inner = inner + 1;
+    }
+    print line; 
+    outer = outer + 1;
+    starCount = starCount + 2;
+}
